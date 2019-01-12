@@ -8,7 +8,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="page-title">
-            SWFC Hooks Demo <span role="img">🔥</span>
+            SWFL Coders Hooks Demo <span role="img">🔥</span>
           </h1>
         </header>
         <Tabs />
