@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch, Redirect, NavLink } from 'react-router-dom';
-import HocExample from './pages/HocExample';
-import RenderPropsExample from './pages/RenderPropsExample';
-import HooksExample from './pages/HooksExample';
+import HocExample from './pages/HocExample/index';
+import RenderPropsExample from './pages/RenderPropsExample/index';
+import HooksExample from './pages/HooksExample/index';
 
 const Tabs = () => {
   return (
