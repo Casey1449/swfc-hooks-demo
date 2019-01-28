@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 
 function withLocalStorage(WrappedComponent) {
   class HOC extends Component {
+    state = {
+      value: this.props.initialValue,
+    };
+
     fetchItem = key => localStorage.getItem(key);
 
     saveItem = (key, data) => localStorage.setItem(key, data);

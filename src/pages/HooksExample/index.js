@@ -1,5 +1,6 @@
 import React from 'react';
+import ChatButton from './ChatButton';
 
-const hooks = () => <h2 className="header">Hooks Example</h2>;
+const hooks = () => <ChatButton />;
 
 export default hooks;

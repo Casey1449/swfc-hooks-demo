@@ -3,36 +3,22 @@ import withLocalStorage from './withLocalStorage';
 
 class Form extends Component {
   state = {
-    displayName: '',
-    name: '',
+    sortBy: '',
   };
 
-  componentDidMount = () => {
-    const storedName = this.props.fetchItem('hocName');
-    if (storedName) {
-      this.setState({ displayName: storedName });
-    }
-  };
-
-  handleNameUpdate = e => this.setState({ name: e.target.value });
-
-  saveName = () => {
-    this.setState({ displayName: this.state.name });
-    this.props.saveItem('hocName', this.state.name);
-  };
+  handleChange = e => this.setState({ sortBy: e.target.value });
 
   render() {
-    const { displayName } = this.state;
     return (
-      <div>
-        <h1>{displayName ? `Hi ${displayName}!` : 'No name saved'}</h1>
-        <input
-          type="text"
-          onChange={this.handleNameUpdate}
-          placeholder="name"
-        />
-        <button onClick={this.saveName}>Save</button>
-      </div>
+      <>
+        <div id="txtboxLabel">Sort by</div>
+        <select value={this.state.sortBy} onChange={this.handleChange}>
+          <option value="grapefruit">Grapefruit</option>
+          <option value="lime">Lime</option>
+          <option value="coconut">Coconut</option>
+          <option value="mango">Mango</option>
+        </select>
+      </>
     );
   }
 }
