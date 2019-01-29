@@ -1,13 +1,14 @@
 import React from 'react';
 import OnlineStatus from './OnlineStatus';
+import ChatButton from '../components/ChatButton';
 
-function ChatButton({ isOnline }) {
-  return (
-    <div>
-      <h1>You are {isOnline ? 'Online' : 'Offline'}</h1>
-    </div>
-  );
-}
+// function ChatButton({ isOnline }) {
+//   return (
+//     <div>
+//       <h1>You are {isOnline ? 'Online' : 'Offline'}</h1>
+//     </div>
+//   );
+// }
 
 export default () => {
   return (
