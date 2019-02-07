@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../components/Button';
 
-export default function ChatButton(props) {
+export default function ChatButton({ isOnline }) {
   return (
     <Button
       disabled={!isOnline}
