@@ -1,13 +1,16 @@
 import React from 'react';
 import useOnlineStatus from './useOnlineStatus';
+import Button from '../components/Button';
 
-function ChatButton() {
+export default function ChatButton(props) {
   const isOnline = useOnlineStatus();
   return (
-    <div>
-      <h1>You are {isOnline ? 'Online' : 'Offline'}</h1>
-    </div>
+    <Button
+      disabled={!isOnline}
+      error={!isOnline}
+      errorText={'You must be online to use chat'}
+    >
+      Chat
+    </Button>
   );
 }
-
-export default ChatButton;

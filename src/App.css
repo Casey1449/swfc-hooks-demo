@@ -56,3 +56,70 @@ li {
   font-weight: 400;
   font-size: 24px;
 }
+
+.centering_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+}
+
+.chat_button {
+  font-family: 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  height: 2em;
+  width: 4em;
+  background: linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+  background-color: #77d42a;
+  border-radius: 6px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  padding: 6px 24px;
+  text-decoration: none;
+}
+
+.chat_button:disabled {
+  background: #ccc;
+  border: none;
+  color: #eee;
+  cursor: default;
+}
+
+.chat_button:focus {
+  outline: 0;
+}
+
+.chat_button:hover:enabled {
+  background: linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+  background-color: #5cb811;
+}
+.chat_buttonn:active:enabled {
+  position: relative;
+  top: 1px;
+}
+
+.btn_message {
+  font-size: 1em;
+  margin: 1em;
+}
+
+.btn_message.show {
+  color: red;
+}
+
+.btn_message.hide {
+  visibility: hidden;
+}
+
+.material-icons.active {
+  font-size: 5em;
+}
+
+.material-icons.inactive {
+  color: #ccc;
+  font-size: 5em;
+}

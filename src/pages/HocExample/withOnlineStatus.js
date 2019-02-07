@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-function HOC(WrappedComponent) {
+function withOnlineStatus(WrappedComponent) {
   class withOnlineStatus extends Component {
     initialStatus =
       window &&
@@ -32,7 +32,11 @@ function HOC(WrappedComponent) {
     }
   }
 
+  withOnlineStatus.displayName = `WithOnlineStatus(${WrappedComponent.displayName ||
+    WrappedComponent.name ||
+    'Component'})`;
+
   return withOnlineStatus;
 }
 
-export default HOC;
+export default withOnlineStatus;
