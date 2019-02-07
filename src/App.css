@@ -69,7 +69,7 @@ li {
   font-family: 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   height: 2em;
   width: 4em;
-  background: linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+  background: linear-gradient(to bottom, #77d42a 5%, #60c112 100%);
   background-color: #77d42a;
   border-radius: 6px;
   border: none;
@@ -94,12 +94,12 @@ li {
 }
 
 .chat_button:hover:enabled {
-  background: linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+  background: linear-gradient(to bottom, #77d42a 5%, #5ab310 100%);
+  border: 1px solid #77d42a;
   background-color: #5cb811;
 }
-.chat_buttonn:active:enabled {
-  position: relative;
-  top: 1px;
+.chat_button:active:enabled {
+  background: linear-gradient(to bottom, #5ab310 5%, #77d42a 100%);
 }
 
 .btn_message {
