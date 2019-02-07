@@ -11,7 +11,7 @@ const Tabs = () => {
         <ul>
           <li>
             <NavLink to="/HocExample" className="tab" activeClassName="active">
-              Higher Order Components
+              HOC
             </NavLink>
           </li>
           <li>
@@ -20,7 +20,7 @@ const Tabs = () => {
               className="tab"
               activeClassName="active"
             >
-              Render Props
+              RPC
             </NavLink>
           </li>
           <li>
@@ -29,7 +29,7 @@ const Tabs = () => {
               className="tab"
               activeClassName="active"
             >
-              Hooks
+              HOOKS
             </NavLink>
           </li>
         </ul>

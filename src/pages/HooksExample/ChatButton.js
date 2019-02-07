@@ -1,7 +1,9 @@
 import React from 'react';
 import Button from '../components/Button';
+import useOnlineStatus from './useOnlineStatus';
 
-export default function ChatButton({ isOnline }) {
+const ChatButton = () => {
+  const isOnline = useOnlineStatus();
   return (
     <Button
       disabled={!isOnline}
@@ -11,4 +13,6 @@ export default function ChatButton({ isOnline }) {
       Chat
     </Button>
   );
-}
+};
+
+export default ChatButton;

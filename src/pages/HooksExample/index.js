@@ -2,7 +2,7 @@ import React from 'react';
 import ChatButton from './ChatButton';
 import WifiIndicator from './WifiIndicator';
 
-export default function HooksExample() {
+const HooksExample = () => {
   return (
     <div className={'centering_wrapper'}>
       <h2 className="header">Hooks Example</h2>
@@ -10,4 +10,6 @@ export default function HooksExample() {
       <WifiIndicator />
     </div>
   );
-}
+};
+
+export default HooksExample;

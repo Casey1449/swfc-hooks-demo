@@ -1,7 +1,8 @@
 import React from 'react';
 import ToggleIcon from '../components/ToggleIcon';
+import withOnlineStatus from './withOnlineStatus';
 
-export default function WifiIndicator({ isOnline }) {
+const WifiIndicator = ({ isOnline }) => {
   return (
     <ToggleIcon
       primary={'wifi'}
@@ -10,4 +11,6 @@ export default function WifiIndicator({ isOnline }) {
       disableAlt
     />
   );
-}
+};
+
+export default withOnlineStatus(WifiIndicator);

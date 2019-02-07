@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Button({ children, disabled, error, errorText }) {
+const Button = ({ children, disabled, error, errorText }) => {
   return (
     <div className={'centering_wrapper'}>
       <button className={'chat_button'} disabled={disabled}>
@@ -11,4 +11,6 @@ export default function Button({ children, disabled, error, errorText }) {
       </span>
     </div>
   );
-}
+};
+
+export default Button;

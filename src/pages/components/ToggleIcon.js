@@ -1,11 +1,6 @@
 import React from 'react';
 
-export default function ToggleIcon({
-  primary,
-  alternate,
-  isPrimary,
-  disableAlt,
-}) {
+const ToggleIcon = ({ primary, alternate, isPrimary, disableAlt }) => {
   return (
     <i
       className={`material-icons ${
@@ -15,4 +10,6 @@ export default function ToggleIcon({
       {isPrimary ? primary : alternate}
     </i>
   );
-}
+};
+
+export default ToggleIcon;
