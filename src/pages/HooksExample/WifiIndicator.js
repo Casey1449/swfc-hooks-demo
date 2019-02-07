@@ -1,11 +1,13 @@
 import React from 'react';
-import useOnlineStatus from './useOnlineStatus';
+import ToggleIcon from '../components/ToggleIcon';
 
-export default function WifiIcon() {
-  const isOnline = useOnlineStatus();
+export default function WifiIndicator({ isOnline }) {
   return (
-    <i className={`material-icons ${isOnline ? 'active' : 'inactive'}`}>
-      {isOnline ? 'wifi' : 'wifi_off'}
-    </i>
+    <ToggleIcon
+      primary={'wifi'}
+      alternate={'wifi_off'}
+      isPrimary={isOnline}
+      disableAlt
+    />
   );
 }
