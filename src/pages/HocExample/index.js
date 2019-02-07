@@ -1,9 +1,15 @@
 import React from 'react';
-import Form from './Form';
+import ChatButton from './ChatButton';
+import WifiIndicator from './WifiIndicator';
 
-export default () => (
-  <div>
-    <h2 className="header">Higher Order Components Example</h2>
-    <Form />
-  </div>
-);
+const HocExample = () => {
+  return (
+    <div className={'centering_wrapper'}>
+      <h2 className="header">Higher Order Components Example</h2>
+      <ChatButton />
+      <WifiIndicator />
+    </div>
+  );
+};
+
+export default HocExample;

@@ -1,10 +1,15 @@
 import React from 'react';
+import ChatButton from './ChatButton';
+import WifiIndicator from './WifiIndicator';
 
-import Form from './Form';
+const RenderPropsExample = () => {
+  return (
+    <div className={'centering_wrapper'}>
+      <h2 className="header">Render Props Example</h2>
+      <ChatButton />
+      <WifiIndicator />
+    </div>
+  );
+};
 
-export default () => (
-  <div>
-    <h2 className="header">RenderProps Example</h2>
-    <Form />
-  </div>
-);
+export default RenderPropsExample;
