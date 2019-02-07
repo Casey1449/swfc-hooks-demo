@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../components/Button';
+import withConsoleLog from '../components/withConsoleLog';
 import withOnlineStatus from './withOnlineStatus';
 
 const ChatButton = ({ isOnline }) => {
@@ -14,4 +15,4 @@ const ChatButton = ({ isOnline }) => {
   );
 };
 
-export default withOnlineStatus(ChatButton);
+export default withConsoleLog(withOnlineStatus(ChatButton));

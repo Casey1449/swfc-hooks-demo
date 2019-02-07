@@ -1,8 +1,10 @@
 import React from 'react';
 import Button from '../components/Button';
+import useConsoleLog from '../components/useConsoleLog';
 import useOnlineStatus from './useOnlineStatus';
 
 const ChatButton = () => {
+  useConsoleLog();
   const isOnline = useOnlineStatus();
   return (
     <Button
